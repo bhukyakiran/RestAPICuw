@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Middleware to parse JSON requests
 app.use(express.json());
@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 
 // Connect to MongoDB and start the server
 mongoose
-  .connect("mongodb+srv://bharath:Saichandra123@cluster595.5euk2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster595")
+  .connect("mongodb+srv://Kiran123:Kiran123@mycluster1api.tj6xg.mongodb.net")
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(port, () => {
